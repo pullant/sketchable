@@ -34,9 +34,10 @@ body.addEventListener("touchstart", (e) => {
 });
 
 body.addEventListener("touchmove", (e) => {
-	e.preventDefault();
 	if (e.touches.length > 0) {
 		targetDiv = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
-		targetDiv.style.backgroundColor = "indigo";
+		if (targetDiv !== document.documentElement) {
+			targetDiv.style.backgroundColor = "indigo";
+		}
 	}
 });
