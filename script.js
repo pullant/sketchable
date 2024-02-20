@@ -32,3 +32,8 @@ body.addEventListener("touchstart", (e) => {
 	targetDiv = e.target;
 	targetDiv.style.backgroundColor = "indigo";
 });
+
+body.addEventListener("touchmove", (e) => {
+	targetDiv = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+	targetDiv.style.backgroundColor = "indigo";
+});
