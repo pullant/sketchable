@@ -1,6 +1,6 @@
 let body = document.querySelector("body");
 body.setAttribute("id", "container");
-body.setAttribute("style", "margin: 30px auto; width: fit-content;");
+body.setAttribute("style", "margin: auto; width: fit-content;");
 
 let rows = [];
 for (let i = 0; i < 16; i++) {
@@ -24,6 +24,11 @@ rows.forEach((row) => {
 });
 
 body.addEventListener("mouseover", (e) => {
+	targetDiv = e.target;
+	targetDiv.style.backgroundColor = "indigo";
+});
+
+body.addEventListener("touchstart", (e) => {
 	targetDiv = e.target;
 	targetDiv.style.backgroundColor = "indigo";
 });
