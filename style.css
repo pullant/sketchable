@@ -5,6 +5,7 @@
 body {
 }
 
-div {
-
+div > div{
+	height: 2em;
+	width: 2em;
 }
