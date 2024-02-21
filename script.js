@@ -25,12 +25,9 @@ function rebuildGrid(GRIDSIZE) {
 	buildButton();
 
 	let rows = [];
-	for (let i = 0; i < GRIDSIZE; i++) {
-		rows[i] = `row${i}`;
-	}
-
 	let columns = [];
 	for (let i = 0; i < GRIDSIZE; i++) {
+		rows[i] = `row${i}`;
 		columns[i] = `column${i}`;
 	}
 
