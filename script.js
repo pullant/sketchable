@@ -2,7 +2,6 @@ let body = document.querySelector("body");
 body.setAttribute("id", "container");
 body.setAttribute("style", "display: flex; flex-direction: column; margin: auto; width: 960px; height: 960px; background-color: #ccc;");
 
-
 rebuildGrid(16); // default Grid
 
 function buildButton() {
